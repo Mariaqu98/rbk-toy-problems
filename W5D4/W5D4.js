@@ -51,7 +51,19 @@ Calling your function should result in:
 
 shoppingSummary(shoppingList); //"I got 3 items at $99.73"
 
+function shoppingSummary(object){
+var number 0;
+var total = 0 ;
+var limit = 100
+for(var x in object){
+if(total<limit)
+price = object['price']
+total = total + price 
+number ++
+}
 
+return "I got" + number + " items at $"+total
+}
 
 /*
 
@@ -97,4 +109,17 @@ Would return a new array with the following elements:
  */
 
 //your answer is here
+function removeMostExpensive(array){
+var newArray = []
+for (var i = 0;i<array.length;i++){
+ for(var key in object){
+var max = array[0];
+if(max>array[i]){
+max = array[i]
+newArray = array.splice(i,1)
+ }
+ }
 
+}
+return newArray
+}
